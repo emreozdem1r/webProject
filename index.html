@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Anasayfa</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<style>
+			//.mySlides {display:none;}
+	</style>
+</head>
+<body onload="httpRequestDuyuru();httpRequestSlider();httpRequestClass();httpRequestActivity()">	
+		<div class="body" id="body"><br>
+			<h2 >Manual Slideshow</h2>
+			<div id="body1" class="img1"></div>
+			
+			<img class="mySlides" src=""s>
+				<!--<img class="mySlides w3-animate-fading" src="http://192.168.137.147:1453/images/1466762715.png" style="width:100%">
+			  <img class="mySlides w3-animate-fading" src="images/foto2.jpg" style="width:100%">
+			  <img class="mySlides w3-animate-fading" src="images/foto3.jpg" style="width:100%">
+			  -->
+			  <button class="w3-button w3-black w3-display-left" onclick="carousel()">&#10094;</button>
+			  <button class="w3-button w3-black w3-display-right" onclick="carousel()">&#10095;</button>
+
+		</div>
+		<div class="right" id="right">
+				<div id="rightText" style="padding-left: 20px;height:50%; padding-top:auto;position: center;"></div>
+		</div>
+		<div class="rightMid" id="rightMid">
+			<div id="midText" style="padding-left: 20px;">
+				
+			</div>
+
+
+		</div>
+		<div class="rightBottom">
+			<div class="hava" style="margin-left:125px;margin-top: 14px;">
+				<a target="_blank" href="https://bookeder.com/weather/trabzon-26039"><img src="https://w.bookcdn.com/weather/picture/32_26039_1_21_34495e_250_2c3e50_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=124&domid=765&anc_id=96814" alt="booked.net"/></a></div>
+		</div>
+		<div class="bottom">
+				<div class="duyuru">
+				<h4 style="font-family: sans-serif;padding-left:10px;">Duyurular:</h4>
+				<marquee direction=left id="duyuru1"> </marquee>
+				</div>
+
+		</div>
+
+
+
+		<script type="text/javascript" src="js/slider.js"></script>
+		<script type="text/javascript" src="js/ajax.js"></script>
+	
+</body>
+</html>
