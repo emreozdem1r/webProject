@@ -10,8 +10,8 @@ function httpRequestDuyuru(){
 			anHttpRequest.send();
 		}
 	}
-	var url="http://192.168.137.147:1453/api/noticelist";
-	//var url="json.txt"
+	//var url="http://192.168.137.147:1453/api/noticelist";
+	var url="noticelist.txt"
 	var client= new HttpClient();
 	client.get(url,function(response){
 		var obj=JSON.parse(response);
@@ -20,13 +20,22 @@ function httpRequestDuyuru(){
 	});
 }
 function print(obj){
-	var i=0;
-	var duyuru="";
-	while(obj[i]!=null){
-		duyuru+=obj[i].message + "	|  | ";
-		i++;
+	try{
+		if(obj==null)
+			console.log("objeden null deger geldi.");
+		else{
+			var i=0;
+			var duyuru="";
+			while(obj[i]!=null){
+				duyuru+=obj[i].message + "	|  | ";
+				i++;
+			}
+			return duyuru;
+		}
 	}
-	return duyuru;
+	catch(err){
+		console.log(err);
+	}
 }
 function httpRequestSlider(){
     var HttpClient = function(){
@@ -40,8 +49,8 @@ function httpRequestSlider(){
       anHttpRequest.send();
     }
   }
-  var url="http://192.168.137.147:1453/api/contentlist";
-  //var url="json.txt"
+  //var url="http://192.168.137.147:1453/api/contentlist";
+  var url="contentlist.txt"
   var client= new HttpClient();
   client.get(url,function(response){
     var obj=JSON.parse(response);
@@ -51,13 +60,29 @@ function httpRequestSlider(){
   });
 }
 function display(obj){
-	var i=0;
+	try{
+	var i=0,visibility=0;
     var img="";
     while(obj[i]!=null){
-        img+='<img class="mySlides" src="http://192.168.137.147:1453/images/' + obj[i].image + '"  >'
+    	if(visibility==0){
+        img+='<img class="mySlides" src="images/' + obj[i].image + '"  >';
+        //http://192.168.137.147:1453/images şeklinde düzeltilecek.
+        i++;
+        visibility=1;
+    }
+    else
+    {
+     img+='<img class="mySlides" src="images/' + obj[i].image + '"  style="visibility:hidden">';
+        //http://192.168.137.147:1453/images şeklinde düzeltilecek.
         i++;
     }
+    }
     return img;
+	}
+	catch(err){
+		console.log(err);
+	}
+
 }
 function httpRequestClass(){
     var HttpClient = function(){
@@ -71,8 +96,8 @@ function httpRequestClass(){
       anHttpRequest.send();
     }
   }
-  var url="http://192.168.137.147:1453/api/classroomlist";
-  //var url="json.txt"
+  //var url="http://192.168.137.147:1453/api/classroomlist";
+  var url="classroomlist.txt"
   var client= new HttpClient();
   client.get(url,function(response){
     var obj=JSON.parse(response);
@@ -82,16 +107,26 @@ function httpRequestClass(){
   });
 }
 function classList(obj){
-	var i=0;
-	var str="";
-	var message="<br><br><br>";
-	while(obj[i]!=null){
-		message+=obj[i].message + "<br>";
-		i++;
+	try{
+		if(obj==null)
+			console.log("objeden null deger geldi.");
+		else{
+		var i=0;
+		var str="";
+		var message="<br><br><br>";
+		while(obj[i]!=null){
+			message+=obj[i].message + "<br>";
+			i++;
+		}
+		str +='<marquee direction="down">' + message+ '</marquee>';
+			
+		return str;
+		}
 	}
-	str +='<marquee direction="down">' + message+ '</marquee>';
-		
-	return str;
+	catch(err){
+		console.log(err);
+	}
+	
 }
 
 function httpRequestActivity(){
@@ -106,8 +141,8 @@ function httpRequestActivity(){
       anHttpRequest.send();
     }
   }
-  var url="http://192.168.137.147:1453/api/activitylist";
-  //var url="json.txt"
+  //var url="http://192.168.137.147:1453/api/activitylist";
+  var url="activitylist.txt"
   var client= new HttpClient();
   client.get(url,function(response){
     var obj=JSON.parse(response);
@@ -118,16 +153,25 @@ function httpRequestActivity(){
 }
 
 function activityList(obj){
-	var i=0;
-	var str="";
-	var message="<br><br>";
-	while(obj[i]!=null){
-		message+=obj[i].message + "<br>";
-		i++;
+	try{
+		if(obj==null)
+			console.log("objeden null deger geldi.");
+		else{
+			var i=0;
+			var str="";
+			var message="";
+			while(obj[i]!=null){
+				message+=obj[i].message+"<br>" ;
+				i++;
+			}
+			str+='<p id="p1">' + message + '</p>';
+				
+			return str;
+		}
 	}
-	str+='<marquee direction="up" scrooldelay=1 scroolamount="100">' + message + '</marquee>';
-		
-	return str;
+	catch(err){
+		console.log(err);
+	}
 }
 
 

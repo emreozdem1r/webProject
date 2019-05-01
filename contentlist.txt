@@ -1,0 +1,1 @@
+[{"department_id":"1","message":"D1 - 08:00 - 10:00 => Mikroi\u015flemciler","image":"foto1.jpg"},{"department_id":"1","message":"\u0130cerik 2","image":"foto2.jpg"},{"department_id":"1","message":"icerik 3","image":"foto3.jpg"},{"department_id":"1","message":"DerslikDuyurusu 2","image":"foto4.jpg"},{"department_id":"1","message":"DerslikDuyurusu 3","image":"foto5.jpg"}]

@@ -8,12 +8,12 @@
 			//.mySlides {display:none;}
 	</style>
 </head>
-<body onload="httpRequestDuyuru();httpRequestSlider();httpRequestClass();httpRequestActivity()">	
+<body onload="httpRequestDuyuru();httpRequestSlider();httpRequestClass();httpRequestActivity();load();callback(); ">	
 		<div class="body" id="body"><br>
 			<h2 >Manual Slideshow</h2>
-			<div id="body1" class="img1"></div>
+			<div id="body1" class="img1" style=""></div>
 			
-			<img class="mySlides" src=""s>
+			<!--<img class="mySlides" src="" style="visibility: hidden;">
 				<!--<img class="mySlides w3-animate-fading" src="http://192.168.137.147:1453/images/1466762715.png" style="width:100%">
 			  <img class="mySlides w3-animate-fading" src="images/foto2.jpg" style="width:100%">
 			  <img class="mySlides w3-animate-fading" src="images/foto3.jpg" style="width:100%">
@@ -23,31 +23,47 @@
 
 		</div>
 		<div class="right" id="right">
+			<div class="panel panel-primary">
+      			<div class="panel-heading" style="padding-right:10px;">Ders Duyurulari &nbsp<div class="spinner-border"></div></div>
+      			</div>
 				<div id="rightText" style="padding-left: 20px;height:50%; padding-top:auto;position: center;"></div>
 		</div>
 		<div class="rightMid" id="rightMid">
-			<div id="midText" style="padding-left: 20px;">
-				
-			</div>
+			
+				<div class="panel panel-primary">
+      			<div class="panel-heading" style="padding-right:10px;">Etkinlikler &nbsp<div class="spinner-border"></div></div>
 
-
+      			</div>
+      			<div id="midText" style="padding-left: 20px;"></div>
 		</div>
 		<div class="rightBottom">
 			<div class="hava" style="margin-left:125px;margin-top: 14px;">
 				<a target="_blank" href="https://bookeder.com/weather/trabzon-26039"><img src="https://w.bookcdn.com/weather/picture/32_26039_1_21_34495e_250_2c3e50_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=124&domid=765&anc_id=96814" alt="booked.net"/></a></div>
 		</div>
 		<div class="bottom">
-				<div class="duyuru">
+
+			<div class="panel panel-primary">
+      <div class="panel-heading">Duyurular</div>
+      <div class="panel-body"><marquee direction=left id="duyuru1"> </marquee></div>
+    </div>
+				<!--<div class="duyuru">
 				<h4 style="font-family: sans-serif;padding-left:10px;">Duyurular:</h4>
 				<marquee direction=left id="duyuru1"> </marquee>
-				</div>
+				</div>-->
 
 		</div>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
 
-
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script type="text/javascript" src="js/slider.js"></script>
 		<script type="text/javascript" src="js/ajax.js"></script>
+		<script type="text/javascript" src="js/jquery.js"></script>
 	
 </body>
 </html>

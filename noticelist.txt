@@ -1,0 +1,1 @@
+[{"department_id":"1","message":"Slider \u0130cerik => http:\/\/192.168.137.147:1453\/images\/resim.png"},{"department_id":"2","message":"S\u0131n\u0131f => api\/classroomlist"},{"department_id":"1","message":"icerik => api\/contentlist"},{"department_id":"1","message":"Etkinlikler => api\/activitylist"}]
