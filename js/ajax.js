@@ -113,7 +113,7 @@ function classList(obj){
 		else{
 		var i=0;
 		var str="";
-		var message="<br><br><br>";
+		var message="";
 		while(obj[i]!=null){
 			message+=obj[i].message + "<br>";
 			i++;

@@ -11,13 +11,9 @@
 <body onload="httpRequestDuyuru();httpRequestSlider();httpRequestClass();httpRequestActivity();load();callback(); ">	
 		<div class="body" id="body"><br>
 			<h2 >Manual Slideshow</h2>
-			<div id="body1" class="img1" style=""></div>
+			<div id="body1" class="img1"></div>
 			
-			<!--<img class="mySlides" src="" style="visibility: hidden;">
-				<!--<img class="mySlides w3-animate-fading" src="http://192.168.137.147:1453/images/1466762715.png" style="width:100%">
-			  <img class="mySlides w3-animate-fading" src="images/foto2.jpg" style="width:100%">
-			  <img class="mySlides w3-animate-fading" src="images/foto3.jpg" style="width:100%">
-			  -->
+			
 			  <button class="w3-button w3-black w3-display-left" onclick="carousel()">&#10094;</button>
 			  <button class="w3-button w3-black w3-display-right" onclick="carousel()">&#10095;</button>
 
@@ -27,31 +23,52 @@
       			<div class="panel-heading" style="padding-right:10px;">Ders Duyurulari &nbsp<div class="spinner-border"></div></div>
       			</div>
 				<div id="rightText" style="padding-left: 20px;height:50%; padding-top:auto;position: center;"></div>
-		</div>
+				</div>
 		<div class="rightMid" id="rightMid">
 			
 				<div class="panel panel-primary">
       			<div class="panel-heading" style="padding-right:10px;">Etkinlikler &nbsp<div class="spinner-border"></div></div>
-
       			</div>
       			<div id="midText" style="padding-left: 20px;"></div>
 		</div>
 		<div class="rightBottom">
-			<div class="hava" style="margin-left:125px;margin-top: 14px;">
-				<a target="_blank" href="https://bookeder.com/weather/trabzon-26039"><img src="https://w.bookcdn.com/weather/picture/32_26039_1_21_34495e_250_2c3e50_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=124&domid=765&anc_id=96814" alt="booked.net"/></a></div>
-		</div>
-		<div class="bottom">
+			<div class="rightBody" style="margin-top: 15px;">
+			<div class="hava" style="position: fixed;padding-left: 30px;">
+				<a target="_blank" href="https://bookeder.com/weather/trabzon-26039"><img src="https://w.bookcdn.com/weather/picture/32_26039_1_21_34495e_250_2c3e50_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=124&domid=765&anc_id=96814" alt="booked.net"/></a>
+			</div>
 
+<!-- Saat başlangıç-->
+
+				<div class="saat" style="position: fixed;right: 40px;top:465px;">
+					<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" wmode="transparent" width="140" height="140" id="movie_name" align="middle">
+			
+		            <param name="movie" value="http://www.saat.bbs.tr/128.swf"/><!--[if !IE]>-->
+		            <object type="application/x-shockwave-flash" data="http://www.saat.bbs.tr/128.swf" wmode="transparent" width="140" height="140">
+		            <param name="movie" value="http://www.saat.bbs.tr/128.swf"/>
+		  	 	    <a href="http://www.saat.bbs.tr">saat</a>
+		    
+		    	    <a href="http://www.adobe.com/go/getflash">
+		            <img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player"/>
+		        	</a>
+		    	    </object>
+					</object>
+
+
+				</div>
+			</div>
+<!-- Saat bitişi-->
+		</div>
+		
+		<div class="bottom">
 			<div class="panel panel-primary">
-      <div class="panel-heading">Duyurular</div>
-      <div class="panel-body"><marquee direction=left id="duyuru1"> </marquee></div>
-    </div>
+      			<div class="panel-heading">Duyurular</div>
+      				<div class="panel-body"><marquee direction=left id="duyuru1"> </marquee></div>
+    				</div>
 				<!--<div class="duyuru">
 				<h4 style="font-family: sans-serif;padding-left:10px;">Duyurular:</h4>
 				<marquee direction=left id="duyuru1"> </marquee>
 				</div>-->
-
-		</div>
+				</div>
 <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
