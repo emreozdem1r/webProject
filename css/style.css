@@ -7,55 +7,71 @@
 .body{
 	position: fixed;
 	width: 70%;
-	height:85%;
+	height:83%;
 	left:0;
-	background-color: grey;
+	background-color: #4D65FF;
+}
+.bottom{
+	position: fixed;
+	width: 70%;
+	height:17%;
+	bottom: 0;
+	left: 0;
+	background-color:#4d65ff;
 }
 .right{
 	position: fixed;
 	right: 0;
 	width:30%;
+	height:32%;
+	background-color:#e8e8e8;
+}
+.rightMid{
+	position: fixed;
+	top: 32%;
+	width:30%;
 	height: 35%;
-	background-color:yellow;
+	background-color:#e8e8e8;
+	right: 0;
 }
 .rightBottom{
 	position: fixed;
 	width:30%;
-	height:30%;
+	height:33%;
+	right: 0;
+	bottom:0;
+	background-color:#e8e8e8;
+}
+.hava{
+		position: fixed;
+	width:30%;
+	height:26%;
 	right: 0;
 	bottom:0;
 	background-color:#565654;
 }
-.rightMid{
+.saat{
 	position: fixed;
-	top: 35%;
-	width:30%;
-	height: 35%;
-	background-color:yellow;
+	width:15%;
+	height:26%;
 	right: 0;
-}
-.bottom{
-	position: fixed;
-	width: 70%;
-	height:15%;
-	bottom: 0;
-	left: 0;
-	background-color:#776ec5;
+	bottom:0;
+	background-color:#565654;
+	
 }
 .mySlides{
-	 position: relative;
- 
+  position: relative;
   background: white;
   border-radius: 0% 0% 0% 0% / 0% 0% 0% 0% ;
   color: white;
-  box-shadow: 20px 20px rgba(0,0,0,.15);
+  box-shadow: 4px 4px rgba(0,0,0,.15);
   transition: all .4s ease;
-    display: block;
+  display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 90%;
-   border-radius: 8px;
-  height: 430px;
+  width: 95%;
+  border-radius: 8px;
+  height: 450px;
 }
 #mySlides:hover {
   border-radius: 0% 0% 50% 50% / 0% 0% 5% 5% ;
@@ -73,13 +89,24 @@
 }
 .baslik{
 	font-family: sans-serif;
-	font-size: 16px;
+	font-size: 18px;
 }
-marquee {
+.ders{
 	font-family: sans-serif;
-	font-size: 25px;
+	font-size:17px;
+	color:#2f2e3c;
+}
+.etkinlik{
+	font-family: sans-serif;
+	font-size:17px;
+	color:#2f2e3c;
+}
+.duyuru {
+	font-family: sans-serif;
+	font-size: 18px;
+	color:white;
 }
 p{
-	font-family: sans-serif;
+	font-family: Nexa Bold;
 	font-size: 25px;
 }

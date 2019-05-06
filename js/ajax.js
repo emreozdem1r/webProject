@@ -118,7 +118,7 @@ function classList(obj){
 			message+=obj[i].message + "<br>";
 			i++;
 		}
-		str +='<marquee direction="down">' + message+ '</marquee>';
+		str +='<marquee direction="down" class="ders">' + message+ '</marquee>';
 			
 		return str;
 		}
@@ -164,7 +164,7 @@ function activityList(obj){
 				message+=obj[i].message+"<br>" ;
 				i++;
 			}
-			str+='<p id="p1">' + message + '</p>';
+			str+='<p id="p1" class="etkinlik">' + message + '</p>';
 				
 			return str;
 		}

@@ -4,78 +4,71 @@
 	<title>Anasayfa</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-	<style>
-			//.mySlides {display:none;}
-	</style>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+<script src="//widget.time.is/t.js"></script>
+<script>
+time_is_widget.init({Turkey_z710:{}});
+</script>
+
 </head>
 <body onload="httpRequestDuyuru();httpRequestSlider();httpRequestClass();httpRequestActivity();load();callback(); ">	
 		<div class="body" id="body"><br>
-			<h2 >Manual Slideshow</h2>
-			<div id="body1" class="img1"></div>
+			
+			<div id="body1" class="img1" style="margin-top: 20px;"></div>
 			
 			
-			  <button class="w3-button w3-black w3-display-left" onclick="carousel()">&#10094;</button>
+			  <!--<button class="w3-button w3-black w3-display-left" onclick="carousel()">&#10094;</button>
 			  <button class="w3-button w3-black w3-display-right" onclick="carousel()">&#10095;</button>
-
+			  -->
 		</div>
 		<div class="right" id="right">
-			<div class="panel panel-primary">
-      			<div class="panel-heading" style="padding-right:10px;">Ders Duyurulari &nbsp<div class="spinner-border"></div></div>
+			<div class="panel panel-primary" style="padding-top: 5px;border-style: none;background-color: #e8e8e8;">
+      			<div class="panel-heading" style="padding-right:10px;margin-left: 7px;margin-right: 7px;border-radius: 7px; font-weight: bold">
+      				<div class="glyphicon glyphicon-list"></div> &nbspDers Duyurulari </div>
       			</div>
-				<div id="rightText" style="padding-left: 20px;height:50%; padding-top:auto;position: center;"></div>
+				<div id="rightText" style="padding-left: 20px; padding-top:auto;position: center;"></div>
 				</div>
 		<div class="rightMid" id="rightMid">
 			
-				<div class="panel panel-primary">
-      			<div class="panel-heading" style="padding-right:10px;">Etkinlikler &nbsp<div class="spinner-border"></div></div>
+				<div class="panel panel-primary" style="border-style: none;background-color: #e8e8e8">
+      			<div class="panel-heading" style="padding-right:10px;margin-left: 7px;margin-right: 7px;border-radius: 7px;font-weight: bold">
+      				<div class="glyphicon glyphicon-education"></div>&nbsp&nbspEtkinlikler </div>
       			</div>
       			<div id="midText" style="padding-left: 20px;"></div>
 		</div>
-		<div class="rightBottom">
-			<div class="rightBody" style="margin-top: 15px;">
-			<div class="hava" style="position: fixed;padding-left: 30px;">
-				<a target="_blank" href="https://bookeder.com/weather/trabzon-26039"><img src="https://w.bookcdn.com/weather/picture/32_26039_1_21_34495e_250_2c3e50_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=124&domid=765&anc_id=96814" alt="booked.net"/></a>
+		<div class="rightBottom"  >
+			<div class="panel panel-primary" style="border-style: none;background-color: #e8e8e8">
+      			<div class="panel-heading" style="padding-right:10px;margin-left: 7px;margin-right: 7px;border-radius: 7px;font-weight: bold">
+      				<div class="glyphicon glyphicon-calendar"></div>&nbsp&nbspHava Durumu ve Saat &nbsp<div id="MyClockDisplay" class="time" 
+      				style="position: fixed; right:0;top:70%;padding-right: 15px;"></div>
+      				</div>
+      			</div>
+			<div class="rightBody" style="background-color:#e8e8e8; ">
+			<div class="hava" style="background-color: #e8e8e8; padding-top: 5px;">
+				<a class="weatherwidget-io" href="https://forecast7.com/tr/40d8039d58/trabzon/" data-label_1="TRABZON" data-icons="Climacons" data-mode="Forecast" data-days="5" data-theme="mountains" >TRABZON</a>
 			</div>
-
-<!-- Saat başlangıç-->
-
-				<div class="saat" style="position: fixed;right: 40px;top:465px;">
-					<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" wmode="transparent" width="140" height="140" id="movie_name" align="middle">
-			
-		            <param name="movie" value="http://www.saat.bbs.tr/128.swf"/><!--[if !IE]>-->
-		            <object type="application/x-shockwave-flash" data="http://www.saat.bbs.tr/128.swf" wmode="transparent" width="140" height="140">
-		            <param name="movie" value="http://www.saat.bbs.tr/128.swf"/>
-		  	 	    <a href="http://www.saat.bbs.tr">saat</a>
-		    
-		    	    <a href="http://www.adobe.com/go/getflash">
-		            <img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player"/>
-		        	</a>
-		    	    </object>
-					</object>
-
-
-				</div>
-			</div>
-<!-- Saat bitişi-->
 		</div>
 		
 		<div class="bottom">
-			<div class="panel panel-primary">
-      			<div class="panel-heading">Duyurular</div>
-      				<div class="panel-body"><marquee direction=left id="duyuru1"> </marquee></div>
-    				</div>
-				<!--<div class="duyuru">
-				<h4 style="font-family: sans-serif;padding-left:10px;">Duyurular:</h4>
-				<marquee direction=left id="duyuru1"> </marquee>
-				</div>-->
-				</div>
+		<div class="panel-group" >
+		<div class="panel panel-info-class"  style="background-color: white;margin-right: 15px;margin-left: 15px;">
+      			<div class="panel-heading" style="padding-right;height: 56px; background-color: white;">
+      				<h4 style="font-family:sans-serif;font-weight: bold">
+      					<div class="glyphicon glyphicon-bullhorn"></div>
+      				Duyurular</h4><div class="panel-body" style=""></div></div>
+      			
+      			</div>	<br><marquee direction=left id="duyuru1" class="duyuru"> </marquee>
+		</div>
+	</div>
 <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-
+<script src="js/time.js"></script>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script type="text/javascript" src="js/slider.js"></script>
