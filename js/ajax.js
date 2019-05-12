@@ -175,29 +175,10 @@ function activityList(obj){
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function deneme(){
-	document.getElementById("demo").innerHTML="<h1>bu duyuru</h1>";
+function callAllOf(){
+	httpRequestActivity();
+	httpRequestClass();
+	httpRequestSlider();
+	httpRequestDuyuru()
+	setTimeout(callAllOf,100000)
 }

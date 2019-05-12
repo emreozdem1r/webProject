@@ -1,20 +1,18 @@
-.page{
-	width: 100%;
-	height: 100%;
-	background-color: red;
-	
+
+* {
+  box-sizing:border-box;
 }
 .body{
 	position: fixed;
 	width: 70%;
-	height:83%;
+	height:80%;
 	left:0;
 	background-color: #4D65FF;
 }
 .bottom{
 	position: fixed;
 	width: 70%;
-	height:17%;
+	height:20%;
 	bottom: 0;
 	left: 0;
 	background-color:#4d65ff;
@@ -71,21 +69,11 @@
   margin-right: auto;
   width: 95%;
   border-radius: 8px;
-  height: 450px;
+  height: auto;
 }
 #mySlides:hover {
   border-radius: 0% 0% 50% 50% / 0% 0% 5% 5% ;
   box-shadow: 10px 10px rgba(0,0,0,.25);
-}
-.mySlides1 {
-
-  border-radius: 4px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 60%;
-  height: 479px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .baslik{
 	font-family: sans-serif;
@@ -93,20 +81,26 @@
 }
 .ders{
 	font-family: sans-serif;
-	font-size:17px;
+	font-size:1.4vw;
 	color:#2f2e3c;
 }
 .etkinlik{
 	font-family: sans-serif;
-	font-size:17px;
+	font-size:1.4vw;
 	color:#2f2e3c;
 }
 .duyuru {
 	font-family: sans-serif;
-	font-size: 18px;
+	font-size: 1.4vw;
 	color:white;
 }
 p{
 	font-family: Nexa Bold;
 	font-size: 25px;
 }
+@media only screen and (max-width:800px) {
+  /* For mobile phones: */
+  .body1,.rightMid, .rightBottom,.bottom, .right {
+    width:100%;
+
+  }
