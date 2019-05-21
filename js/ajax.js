@@ -10,8 +10,8 @@ function httpRequestDuyuru(){
 			anHttpRequest.send();
 		}
 	}
-	//var url="http://192.168.137.147:1453/api/noticelist";
-	var url="noticelist.txt"
+	var url="http://192.168.137.147:1453/api/noticelist";
+	//var url="noticelist.txt"
 	var client= new HttpClient();
 	client.get(url,function(response){
 		var obj=JSON.parse(response);
@@ -34,7 +34,7 @@ function print(obj){
 		}
 	}
 	catch(err){
-		console.log(err);
+		//console.log(err);
 	}
 }
 function httpRequestSlider(){
@@ -49,8 +49,8 @@ function httpRequestSlider(){
       anHttpRequest.send();
     }
   }
-  //var url="http://192.168.137.147:1453/api/contentlist";
-  var url="contentlist.txt"
+  var url="http://192.168.137.147:1453/api/contentlist";
+  //var url="contentlist.txt"
   var client= new HttpClient();
   client.get(url,function(response){
     var obj=JSON.parse(response);
@@ -65,22 +65,23 @@ function display(obj){
     var img="";
     while(obj[i]!=null){
     	if(visibility==0){
-        img+='<img class="mySlides" src="images/' + obj[i].image + '"  >';
+        img+='<img class="mySlides" src="http://192.168.137.147:1453/images/' + obj[i].image + '"  >';
         //http://192.168.137.147:1453/images şeklinde düzeltilecek.
         i++;
         visibility=1;
     }
     else
     {
-     img+='<img class="mySlides" src="images/' + obj[i].image + '"  style="visibility:hidden">';
+     img+='<img class="mySlides" src="http://192.168.137.147:1453/images/' + obj[i].image + '"  style="visibility:hidden">';
         //http://192.168.137.147:1453/images şeklinde düzeltilecek.
+        console.log(img);
         i++;
     }
     }
     return img;
 	}
 	catch(err){
-		console.log(err);
+		//console.log(err);
 	}
 
 }
@@ -96,8 +97,8 @@ function httpRequestClass(){
       anHttpRequest.send();
     }
   }
-  //var url="http://192.168.137.147:1453/api/classroomlist";
-  var url="classroomlist.txt"
+  var url="http://192.168.137.147:1453/api/classroomlist";
+  //var url="classroomlist.txt"
   var client= new HttpClient();
   client.get(url,function(response){
     var obj=JSON.parse(response);
@@ -124,7 +125,7 @@ function classList(obj){
 		}
 	}
 	catch(err){
-		console.log(err);
+		//console.log(err);
 	}
 	
 }
@@ -141,8 +142,8 @@ function httpRequestActivity(){
       anHttpRequest.send();
     }
   }
-  //var url="http://192.168.137.147:1453/api/activitylist";
-  var url="activitylist.txt"
+  var url="http://192.168.137.147:1453/api/activitylist";
+  //var url="activitylist.txt"
   var client= new HttpClient();
   client.get(url,function(response){
     var obj=JSON.parse(response);
@@ -170,7 +171,7 @@ function activityList(obj){
 		}
 	}
 	catch(err){
-		console.log(err);
+		//console.log(err);
 	}
 }
 
@@ -180,5 +181,5 @@ function callAllOf(){
 	httpRequestClass();
 	httpRequestSlider();
 	httpRequestDuyuru()
-	setTimeout(callAllOf,100000)
+	setTimeout(callAllOf,10000)
 }
